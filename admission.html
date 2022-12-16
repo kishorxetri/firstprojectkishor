@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+   
+    <title>Final Project</title>
+    
+    <script type="text/javascript" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="kishor.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+  <div class="section1">
+    <div class="topnav">
+      
+
+        <img src="images/bagew.jpg" alt="" style="float: left; height: 80px; width: 180px;margin-right:200px; margin-left: 80px;">
+        <div class="nav" style="padding-left: 80px; padding-top: 15px;">
+        
+        <a href="home.html"> HOME</a>
+        <a href="about.html">About</a>
+        <a href="admission.html">Admission</a>
+        <a href="facility.html">Facilities</a>
+        <a href="program.html">Programs</a>
+        <a href="notice.html">Notices</a>
+        <a href="contact.html">CONTACT</a>  
+        </div>
+        </div>
+    </div>
+    <h3>Students registration form</h3>
+
+   <div class="container">
+    <div class="row">
+        <div class="col-10">
+            <label for="fname">First Name:</label>
+        </div>
+        <div class="col-90">
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="lname">Last Name:</label>
+        </div>
+        <div class="col-90">
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="email">Email:</label>
+        </div>
+        <div class="col-90">
+            <input type="email" id="email" name="email" placeholder="it should contain @,.">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="mobile">Mobile:</label>
+        </div>
+        <div class="col-90">
+            <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="gender" required>Gender:</label>
+        </div>
+        <div class="col-90">
+            <input type="radio" id="male" name="gender" value="male"/>Male
+            <input type="radio" id="female" name="gender" value="female"/>Female
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="dob">Date Of Birth:</label>
+        </div>
+        <div class="col-90">
+            <input type="Date" id="dob" name="dob">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="address">Address:</label>
+        </div>
+        <div class="col-90">
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="city">City:</label>
+        </div>
+        <div class="col-90">
+            <input type="text" id="city" name="city" maxlength="10">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="pincode">Area PIN:</label>
+        </div>
+        <div class="col-90">
+            <input type="number" id="pin" name="pin" maxlength="6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="state">State:</label>
+        </div>
+        <div class="col-90">
+            <input type="text" id="state" name="state">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+           
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="specialization">Specialization:</label>
+        </div>
+        <div class="col-90">
+            <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Computer Science">Computer Science<br/>
+            <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Information Technology">Information Technology<br/>
+            <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Computer Architecture">Computer Architecture<br/>
+            <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Tele Communication">Tele Communication<br/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="password">Password:</label>
+        </div>
+        <div class="col-90">
+            <input type="password" id="password" name="password" maxlength="8">
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Registered" onclick="SaveStudentDetails()">
+    </div>  
+</div>  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+  <img src="images/bagg.jpg">
+        <h3>About<span>Bagiswori</span></h3>
+
+        <p class="footer-links">
+            <a href="home.html">Home</a>
+            |
+            <a href="program.html">Program</a>
+            |
+            <a href="about.html">About</a>
+            |
+            <a href="contact.html">Contact</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Bageswori College</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+              <p><span>Bhaktapur-9 chyamasingh 
+      near bhaktapur hospital
+    </span>
+                street no-0098</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>9813934558</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="bagiswoerihelp.gmail.com"></a>bagiswoerihelp.gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the college</span>
+            We offer education from school level to masters level along with new technologies and ideas.We provide excellent facilities and best education for our studentd.</p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+
+        </div>
+</div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.996072360311!2d85.42106256977542!3d27.67099800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb0552be6cd8b9%3A0x44d1a6f18448792f!2sBagiswori%20Secondary%20School!5e0!3m2!1sen!2snp!4v1659319334919!5m2!1sen!2snp" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </html>
